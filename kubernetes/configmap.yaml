@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: profil-config
+data:
+  KOTA: "Palembang"
+  UNIVERSITAS: "Universitas Sriwijaya"
+  JURUSAN: "Sistem Komputer"
+  IPK: "3.70"

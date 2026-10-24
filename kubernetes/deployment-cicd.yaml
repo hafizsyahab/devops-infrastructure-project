@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: profil-cicd-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: profil-cicd
+  template:
+    metadata:
+      labels:
+        app: profil-cicd
+    spec:
+      containers:
+      - name: profil-container
+        image: abdurrahmanhafiz/profil-image:v2
+        imagePullPolicy: Always

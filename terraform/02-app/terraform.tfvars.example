@@ -1,0 +1,1 @@
+kubeconfig_path = "../01-cluster/tf-lab-config"

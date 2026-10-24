@@ -1,0 +1,16 @@
+services:
+  web1:
+    build: .
+    container_name: profil-1
+
+  web2:
+    image: nginx
+    container_name: nginx-server
+    ports:
+      - "8080:80"
+    volumes:
+      - ./html:/usr/share/nginx/html
+    environment:
+      - NAMA=Abdurrahman Hafiz
+      - KOTA=Palembang
+      - ENV=development
